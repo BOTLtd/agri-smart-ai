@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriSmart - AI-Powered Farming</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
+        header { background: #4CAF50; color: white; padding: 20px; font-size: 24px; }
+        section { padding: 20px; }
+        .feature { background: #f4f4f4; margin: 10px; padding: 20px; border-radius: 5px; }
+        footer { background: #333; color: white; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        .lang-switch { margin: 10px; }
+    </style>
+    <script>
+        const translations = {
+            en: {
+                welcome: "Welcome to AgriSmart",
+                description: "Empowering Rwandan youth in agriculture using AI-driven solutions.",
+                assistant: "AI Farming Assistant",
+                assistant_desc: "Get real-time farming advice and insights with our AI chatbot.",
+                disease: "Crop Disease Detection",
+                disease_desc: "Upload a picture of your crop to detect diseases using AI.",
+                land: "Smart Land & Finance Access",
+                land_desc: "Connect with financial services and land opportunities.",
+                market: "Market Price Forecasting & Marketplace",
+                market_desc: "Stay ahead with AI-powered price predictions and sell directly to buyers.",
+                jobs: "Agri-Job Matching",
+                jobs_desc: "Find agriculture-related jobs and opportunities near you.",
+                footer: "AgriSmart © 2025 | Powered by AI"
+            },
+            rw: {
+                welcome: "Murakaza neza kuri AgriSmart",
+                description: "Gufasha urubyiruko rw'u Rwanda mu buhinzi hifashishijwe AI.",
+                assistant: "Umufasha w'Ubuhinzi wa AI",
+                assistant_desc: "Shaka inama n'ubumenyi bwihuse mu buhinzi ukoresheje AI.",
+                disease: "Kumenya Indwara z'Ibihingwa",
+                disease_desc: "Shyiraho ifoto y'igihingwa cyawe kugira ngo umenye indwara ukoresheje AI.",
+                land: "Kugera ku Butaka n'Imari",
+                land_desc: "Huza na serivisi z'imari n'amahirwe yo kubona ubutaka.",
+                market: "Gusesengura Igiciro cy'Isoko & Kugurisha",
+                market_desc: "Menya uko ibiciro by'isoko bihagaze ukoresheje AI kandi ugurishe neza.",
+                jobs: "Gushakisha Akazi mu Buhinzi",
+                jobs_desc: "Shaka akazi gashamikiye ku buhinzi hafi yawe.",
+                footer: "AgriSmart © 2025 | Ifashwa na AI"
+            }
+        };
+        
+        function switchLanguage(lang) {
+            document.getElementById("welcome").innerText = translations[lang].welcome;
+            document.getElementById("description").innerText = translations[lang].description;
+            document.getElementById("assistant").innerText = translations[lang].assistant;
+            document.getElementById("assistant_desc").innerText = translations[lang].assistant_desc;
+            document.getElementById("disease").innerText = translations[lang].disease;
+            document.getElementById("disease_desc").innerText = translations[lang].disease_desc;
+            document.getElementById("land").innerText = translations[lang].land;
+            document.getElementById("land_desc").innerText = translations[lang].land_desc;
+            document.getElementById("market").innerText = translations[lang].market;
+            document.getElementById("market_desc").innerText = translations[lang].market_desc;
+            document.getElementById("jobs").innerText = translations[lang].jobs;
+            document.getElementById("jobs_desc").innerText = translations[lang].jobs_desc;
+            document.getElementById("footer").innerText = translations[lang].footer;
+        }
+    </script>
+</head>
+<body>
+    <header>AgriSmart - AI-Powered Farming for Youth</header>
+    
+    <div class="lang-switch">
+        <button onclick="switchLanguage('en')">English</button>
+        <button onclick="switchLanguage('rw')">Kinyarwanda</button>
+    </div>
+    
+    <section>
+        <h2 id="welcome">Welcome to AgriSmart</h2>
+        <p id="description">Empowering Rwandan youth in agriculture using AI-driven solutions.</p>
+    </section>
+    
+    <section class="feature">
+        <h3 id="assistant">AI Farming Assistant</h3>
+        <p id="assistant_desc">Get real-time farming advice and insights with our AI chatbot.</p>
+    </section>
+    
+    <section class="feature">
+        <h3 id="disease">Crop Disease Detection</h3>
+        <p id="disease_desc">Upload a picture of your crop to detect diseases using AI.</p>
+    </section>
+    
+    <section class="feature">
+        <h3 id="land">Smart Land & Finance Access</h3>
+        <p id="land_desc">Connect with financial services and land opportunities.</p>
+    </section>
+    
+    <section class="feature">
+        <h3 id="market">Market Price Forecasting & Marketplace</h3>
+        <p id="market_desc">Stay ahead with AI-powered price predictions and sell directly to buyers.</p>
+    </section>
+    
+    <section class="feature">
+        <h3 id="jobs">Agri-Job Matching</h3>
+        <p id="jobs_desc">Find agriculture-related jobs and opportunities near you.</p>
+    </section>
+    
+    <footer id="footer">AgriSmart &copy; 2025 | Powered by AI</footer>
+</body>
+</html>
